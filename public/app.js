@@ -5,7 +5,7 @@ function getWorkouts() {
     // console.log(data[0].exercises[0].name)
     for (let i = 0; i < data.length; i++) {
       $("#workoutspot").append(
-        `<div class="jumbotron jumbotron-fluid shadow"><div class="container"><h3>${data[i].name}</h3><hr class="my-4 shadow"><table id=${data[i]._id} class="col-sm-12"><tr><th>Exercise Name</th><th>Type</th><th>Weight</th><th>Sets</th><th>Reps</th><th>Duration</th><th>Distance</th></tr>`
+        `<div class="jumbotron jumbotron-fluid shadow col-sm-12"><div class="container"><h3>${data[i].name}</h3><table id=${data[i]._id} class="table table-sm table-striped"><tr scope="col"><th>Exercise Name</th><th>Type</th><th>Weight</th><th>Sets</th><th>Reps</th><th>Duration</th><th>Distance</th></tr>`
       );
       $("#exerciseSelect").append(`<option>${data[i].name}</option>`)
       $("#updateSelect").append(`<option>${data[i].name}</option>`)
