@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" />
+  <title>Workout Planner</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+  <div class="jumbotron jumbotron-fluid text-center bg-dark shadow">
+    <div class="container">
+      <h1 class="display-4 text-primary">Workout Planner</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mb-5" id="workoutspot">
+      
+    </div>
+    
+    
+    <div class="row justify-content-around mb-2">
+      <form class="col-sm-5" id="createWorkPlan">
+        <h2>Create A Workout</h2>
+        <input type="text" class="form-control" id="planName" placeholder="Plan Name" autofocus />
+        <button class="btn btn-lg btn-primary btn-block shadow" id="submit" type="submit">
+          Submit
+        </button>
+      </form>
+      <form class="col-sm-5" id="deleteExercise">
+        <h2>Delete an Exercise</h2>
+        <label for="delete">Choose an Exercise</label>
+          <select class="form-control" id="delete">
+            
+          </select>
+        <button class="btn btn-lg btn-primary btn-block shadow" id="deleteButton" type="submit">
+          Submit
+        </button>
+      </form>
+      
+    </div>
+      
+    <div class="row mt-5 mb-5 justify-content-around">
+      
+      <form class="col-sm-5" id="createWorkout">
+        <h2>Create an Exercise</h2>
+          <label for="exerciseSelect">Choose a Workout</label>
+          <select class="form-control" id="exerciseSelect">
+            
+          </select>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Exercise Name" autofocus />
+        <input type="text" class="form-control" id="exerciseType" name="exerciseType" placeholder="Type of Exercise" autofocus />
+        <input type="text" class="form-control" id="weight" name="weight" placeholder="weight" autofocus />
+        <input type="text" class="form-control" id="sets" name="sets" placeholder="sets" autofocus />
+        <input type="text" class="form-control" id="reps" name="reps" placeholder="reps" autofocus />
+        <input type="text" class="form-control" id="duration"  name="duration" placeholder="duration" autofocus />
+        <input type="text" class="form-control" id="distance"name="distance" placeholder="distance" autofocus />
+        <button class="btn btn-lg btn-primary btn-block shadow" id="submit" type="submit">
+          Submit
+        </button>
+      </form>
+      <form class="col-sm-5" id="updateWorkout">
+        <h2>Update an Exercise</h2>
+        <label for="updateSelect">Choose a Workout</label>
+          <select class="form-control" id="updateSelect">
+            
+          </select>
+        <input type="text" class="form-control" id="updateCurrent" name="currentname" placeholder="Current Exercise Name" autofocus />
+        <input type="text" class="form-control" id="updateName" name="name" placeholder="New Exercise Name" autofocus />
+        <input type="text" class="form-control" id="updateType" name="exerciseType" placeholder="Type of Exercise" autofocus />
+        <input type="text" class="form-control" id="updateWeight" name="weight" placeholder="Weight" autofocus />
+        <input type="text" class="form-control" id="updateSets" name="sets" placeholder="Sets" autofocus />
+        <input type="text" class="form-control" id="updateReps" name="reps" placeholder="Reps" autofocus />
+        <input type="text" class="form-control" id="updateDuration" name="duration" placeholder="Duration" autofocus />
+        <input type="text" class="form-control" id="updateDistance" name="distance" placeholder="Distance" autofocus />
+        <button class="btn btn-lg btn-primary btn-block shadow" id="submit" type="submit">
+          Submit
+        </button>
+      </form>
+      
+
+    </div>
+    
+      
+    
+   
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
